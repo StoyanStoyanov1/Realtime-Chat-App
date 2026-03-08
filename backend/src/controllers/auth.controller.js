@@ -98,4 +98,4 @@ export const logout = async (_, res) => {
     res.status(200).json({message: "Logged out successfully"});
 };
 
-export const updateProfile = async
+export const updateProfile = async (req, res) => {};
