@@ -1,5 +1,16 @@
-export default function App() {
+import {Routes, Route} from "react-router";
+import ChatPage from "./pages/ChatPage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
+
+function App() {
     return (
-       <button className="btn btn-primary">My button</button>
+       <Routes>
+           <Route path="/" element={<ChatPage />} />
+           <Route path="/login" element={<LoginPage />} />
+           <Route path="/sign-up" element={<SignUpPage />} />
+       </Routes>
     )
 }
+
+export default App
